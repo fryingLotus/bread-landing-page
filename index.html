@@ -1,62 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <div class="left-side">
-            <h1 class="logo">LOGO</h1>
-        </div>
-        <ul class="middle-side">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Story</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="right-side">
-        
-            <button type="button" class="btn btn-primary btn-lg">RESERVATION</button>
-        </div>
+      <div class="left-side">
+        <h1 class="logo">LOGO</h1>
+      </div>
+      <ul class="middle-side">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">STORY</a></li>
+        <li><a href="webpage/menu.html">MENU</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+      <div class="right-side">
+        <button type="button" class="btn btn-primary btn-lg reserveBtn">
+          RESERVATION
+        </button>
+      </div>
     </div>
     <section class="FirstSection">
-        <div class="heroContainer">
-            <h1 class="HeroText">DELICIOUS <span style="color: #DC3545;">BREAD</span></h1>
-            <p class="subtext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quo maiores autem. Quidem, accusamus deserunt? Adipisci, nulla. Asperiores, tempore optio.</p>
-            <button type="button" class="btn btn-primary btn-lg ">View Menu</button>
-          
-        </div>
+      <div class="heroContainer">
+        <h1 class="HeroText">
+          ICHIBAN <span style="color: #f01228">RAMEN</span>
+        </h1>
+      </div>
+    </section>
+    <section class="subHeadSection">
+      <p class="subHeadText">
+        Inspired by the hearth of Japenese Food Culture. Built on the principle
+        that food tastes better when shared. For the vibrant community of our
+        home.
+      </p>
     </section>
     <section class="SecondSection">
-        <div class="img-text">
-            <img class="img1" src="image/pexels-photo-5591663.jpeg" alt="">
-            <div class="TextContainer1">
-            <h1 class="firstSectionText">Health is the most precious</h1>
-            <p>While it is important to have naturally occurring sugars in your <br>diet many foods contain harmful added sugars  that contain <br>  no nutritional value.  
-            </p>
-            <p>According to a study conducted by the University of Florida, the brain releases heroin-like chemicals called endogenous opioids  when an individual indulges on sweet, salty or fatty foods.  </p>
-            </div>
-       </div>
-      
-       <div class="img-text2">
-       <div class="TextContainer2">
-            <h1 class="secondSectionText">Reviews</h1>
-            <h1 class="quote">❝</h1>
-            <p>This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.</p>
-            <h1 class="quote2">❞</h1>  
-            <h2>– Loo Hudson</h2> 
+      <div class="img-text">
+        <img class="img1" src="image/ramenStory1.avif" alt="" />
+        <div class="TextContainer1">
+          <h1 class="firstSectionText">Health is the most precious</h1>
+          <p>
+            While it is important to have naturally occurring sugars in your
+            <br />diet many foods contain harmful added sugars that contain
+            <br />
+            no nutritional value.
+          </p>
+          <p>
+            According to a study conducted by the University of Florida, the
+            brain releases heroin-like chemicals called endogenous opioids when
+            an individual indulges on sweet, salty or fatty foods.
+          </p>
         </div>
-            <img class="img2" src="image/pexels-photo-5591712.jpeg" alt="">
-            
-       </div>
+      </div>
+
+      <div class="img-text2">
+        <div class="TextContainer2">
+          <h1 class="secondSectionText">Reviews</h1>
+          <h1 class="quote">❝</h1>
+          <p>
+            This cozy restaurant has left the best impressions! Hospitable
+            hosts, delicious dishes, beautiful presentation, wide wine list and
+            wonderful dessert. I recommend to everyone! I would like to come
+            back here again and again.
+          </p>
+          <h1 class="quote2">❞</h1>
+          <h2>– Loo Hudson</h2>
+        </div>
+        <img class="img2" src="image/ramenStory2.avif" alt="" />
+      </div>
     </section>
-    <div class="footer">
-        <p>Made by Seyhakbotr</p>
-        <p>Pic taken from Freepik or unsplash</p>
+    <section class="newSletterContainer">
+      <h2 class="newSletterHeading">SUBSCRIBE TO OUR NEWSLETTER</h2>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Email Address"
+          aria-label="Email Address"
+          aria-describedby="basic-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary newsletter-btn"
+            type="button"
+          >
+            SUBSCRIBE
+          </button>
+        </div>
+      </div>
+      <p class="text-block">
+        Enter your email to stay up to date with everything that's happening at
+        Ichiban Ramen.
+      </p>
+    </section>
+    <section class="promotion">
+      <h1 class="promoText">
+        <span style="color: orange">PROMOTION</span> NOW AVAILABLE
+      </h1>
+      <button type="button" class="btn btn-primary btn-lg promoButton">
+        Order Now
+      </button>
+    </section>
+
+  
+  </body>
+  <footer class="footer">
+    <div class="footer-flex-container">
+      
+        <img
+          src="image/japanese-ramen-logo-design-vector_707267-450-removebg-preview.png"
+          alt="" class="footerLogo"
+        />
+    
+      <div class="div-block1">
+        <h2 class="footer-heading">Contact us</h2>
+        <ul class="content1">
+          <li>
+            219 DeKalb Ave <br />
+            Brooklyn, NY 11205
+          </li>
+          <br />
+          <li>347 – 689 – 4287</li>
+        </ul>
+      </div>
+      <div class="div-block1">
+        <h2 class="footer-heading">Hours</h2>
+        <ul class="content1">
+          <li>
+            Sunday – Wednesday <br />
+            Dinner 5 pm – 10 pm
+          </li>
+          <br />
+          <li>
+            Thursday – Saturday <br />
+            Dinner 5 pm – 11 pm
+          </li>
+          <br />
+          <li>
+            Weekday Lunch <br />
+            Tues – Fri, 12 pm – 4 pm
+          </li>
+          <br />
+          <li>
+            Weekend Brunch <br />
+            Sat & Sun, 10 am – 3 pm
+          </li>
+          <br />
+        </ul>
+      </div>
+      <div class="div-block1">
+        <h2 class="footer-heading">More info</h2>
+        <ul class="content2">
+          <li>Catering</li>
+          <li>Event</li>
+          <li>Reservation</li>
+          <li>Gift Cards</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
     </div>
-</body>
+  </footer>
 </html>
