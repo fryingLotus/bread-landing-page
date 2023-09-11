@@ -1,57 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  </head>
     <title>Menu</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <div class="left-side">
-          <h1 class="logo">LOGO</h1>
-        </div>
-        <ul class="middle-side">
-          <li><a href="../index.html">HOME</a></li>
-          <li><a href="#">STORY</a></li>
-          <li><a href="webpage/menu.html">MENU</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-        <div class="right-side">
-          <button type="button" class="btn btn-primary btn-lg reserveBtn">
-            RESERVATION
-          </button>
-        </div>
+      <div class="left-side">
+        <h1 class="logo">LOGO</h1>
       </div>
+      <ul class="middle-side">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="#">STORY</a></li>
+        <li><a href="#" class="menuNav">MENU</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+      <div class="right-side">
+        <a href="reservation.html"><button type="button" class="btn btn-primary btn-lg reserveBtn">
+          RESERVATION
+        </button></a>
+      </div>
+    </div>
 
-      <section class="menu">
-        <h1 class="menuHero">MENUS</h1>
-      </section>
+    <section class="menu">
+      <h1 class="menuHero">MENUS</h1>
+    </section>
 
-      <section class="menuContainer">
+    <section class="menuContainer">
+      <button type="button" class="btn btn-primary btn-lg menuButton" id="ramenButton">
+        RAMEN 
+      </button>
+      <button type="button" class="btn btn-primary btn-lg menuButton" id="bentoButton">
+        BENTO
+      </button>
+      <button type="button" class="btn btn-primary btn-lg menuButton" id="brunchButton">
+        BRUNCH
+      </button>
+      <button type="button" class="btn btn-primary btn-lg menuButton" id="drinkButton">
+        DRINKS
+      </button>
+    </section>
+    <section class="menuItem">
+      <div id="ramenMenu">
+      <div class="menuTitle">RAMEN MENU</div>
+
+      <div class="rowContainer">
+        <div class="infoImage">
+          <img class="menuImage" src="../image/tonkotsu2.avif" alt="" />
+          <div class="TextContainer1">
+            <h1 class="fs-2">Tonkotsu Ramen</h1>
+            <p>Creamy broth and full of richness</p>
+            <p class="text-end">Price : 6.2$</p>
+          </div>
+        </div>
+        <div class="infoImage">
+          <img
+            class="menuImage"
+            src="../image/Sesame-Soba-Noodles-22.jpg"
+            alt=""
+          />
+          <div class="TextContainer1">
+            <h1 class="fs-2">Soba Noodle</h1>
+            <p>Cold and Refreshing!</p>
+            <p class="text-end">Price : 4.2$</p>
+          </div>
+        </div>
         
-        <button type="button" class="btn btn-primary btn-lg menuButton">DINNER</button>
-        <button type="button" class="btn btn-primary btn-lg menuButton">LUNCH</button>
-        <button type="button" class="btn btn-primary btn-lg menuButton">BRUNCH</button>
-        <button type="button" class="btn btn-primary btn-lg menuButton">DRINKS</button>
+      </div>
+      <div class="rowContainer">
+        <div class="infoImage">
+          <img class="menuImage" src="../image/sapporo.webp" alt="" />
+          <div class="TextContainer1">
+            <h1 class="fs-2">Sapporo Ramen</h1>
+            <p>Creamy broth and full of richness</p>
+            <p class="text-end">Price : 6.2$</p>
+          </div>
+        </div>
+        <div class="infoImage">
+          <img
+            class="menuImage"
+            src="../image/SpicyMisoRamen_Square.jpg"
+            alt=""
+          />
+          <div class="TextContainer1">
+            <h1 class="fs-2">Miso Ramen</h1>
+            <p>Cold and Refreshing!</p>
+            <p class="text-end">Price : 4.2$</p>
+          </div>
+        </div>
         
-      </section>
+      </div>
+      <div class="rowContainer">
+        <div class="infoImage">
+          <img class="menuImage" src="../image/signatureshoyuramen.webp" alt="" />
+          <div class="TextContainer1">
+            <h1 class="fs-2">Shoyo Ramen</h1>
+            <p>Creamy broth and full of richness</p>
+            <p class="text-end">Price : 6.2$</p>
+          </div>
+        </div>
+        <div class="infoImage">
+          <img
+            class="menuImage"
+            src="../image/yaki.jpg"
+            alt=""
+          />
+          <div class="TextContainer1">
+            <h1 class="fs-2">Yakisoba Noodle</h1>
+            <p>Cold and Refreshing!</p>
+            <p class="text-end">Price : 4.2$</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- BENTO -->
+       <div id="bentoMenu">
+      <div class="menuTitle">BENTO MENU</div>
       
-      <div id="menuText"></div>
+      <div class="rowContainer">
+        <div class="infoImage">
+          <img class="menuImage" src="../image/chicken.jpg" alt="" />
+          <div class="TextContainer1">
+            <h1 class="fs-2">Karrage Bento</h1>
+            <p>Creamy broth and full of richness</p>
+            <p class="text-end">Price : 6.2$</p>
+          </div>
+        </div>
+        <div class="infoImage">
+          <img
+            class="menuImage"
+            src="../image/hibachi.jpg"
+            alt=""
+          />
+          <div class="TextContainer1">
+            <h1 class="fs-2">Hibachi Bento</h1>
+            <p>Cold and Refreshing!</p>
+            <p class="text-end">Price : 4.2$</p>
+          </div>
+        </div>
+        </div>
 
-</body>
-<footer class="footer">
+        <div class="rowContainer">
+          <div class="infoImage">
+            <img class="menuImage" src="../image/Tonkatsu-Bento.jpg" alt="" />
+            <div class="TextContainer1">
+              <h1 class="fs-2">Katsu Chicken Bento</h1>
+              <p>Creamy broth and full of richness</p>
+              <p class="text-end">Price : 6.2$</p>
+            </div>
+          </div>
+          <div class="infoImage">
+            <img
+              class="menuImage"
+              src="../image/calamari.jpg"
+              alt=""
+            />
+            <div class="TextContainer1">
+              <h1 class="fs-2">Calamari Bento</h1>
+              <p>Cold and Refreshing!</p>
+              <p class="text-end">Price : 4.2$</p>
+            </div>
+          </div>
+          </div>
+          </div>
+          <!-- BRUNCH -->
+          <div id="brunchMenu">
+          <div class="menuTitle">BRUNCH MENU</div>
+      <div class="rowContainer">
+        <div class="infoImage">
+          <img class="menuImage" src="../image/karrage.jpg" alt="" />
+          <div class="TextContainer1">
+            <h1 class="fs-2">Karrage Chicken</h1>
+            <p>Creamy broth and full of richness</p>
+            <p class="text-end">Price : 6.2$</p>
+          </div>
+        </div>
+        <div class="infoImage">
+          <img
+            class="menuImage"
+            src="../image/tempuura.jpg"
+            alt=""
+          />
+          <div class="TextContainer1">
+            <h1 class="fs-2">Tempura Shrimp</h1>
+            <p>Cold and Refreshing!</p>
+            <p class="text-end">Price : 4.2$</p>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="rowContainer">
+          <div class="infoImage">
+            <img class="menuImage" src="../image/tonkatsuSteak.jpg" alt="" />
+            <div class="TextContainer1">
+              <h1 class="fs-2">Tonkatsu </h1>
+              <p>Creamy broth and full of richness</p>
+              <p class="text-end">Price : 6.2$</p>
+            </div>
+          </div>
+          <div class="infoImage">
+            <img
+              class="menuImage"
+              src="../image/tako.jpg"
+              alt=""
+            />
+            <div class="TextContainer1">
+              <h1 class="fs-2">Takoyaki</h1>
+              <p>Cold and Refreshing!</p>
+              <p class="text-end">Price : 4.2$</p>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+      <!-- DRINKS -->
+      <div id="drinkMenu">
+      <div class="menuTitle">DRINKS MENU</div>
+      <div class="rowContainer">
+        <div class="infoImage">
+          <img class="menuImage" src="../image/coca.jpg" alt="" />
+          <div class="TextContainer1">
+            <h1 class="fs-2">Coca Cola</h1>
+            <p>Creamy broth and full of richness</p>
+            <p class="text-end">Price : 1.2$</p>
+          </div>
+        </div>
+        <div class="infoImage">
+          <img
+            class="menuImage"
+            src="../image/Orange-Juice-1-of-1.jpeg"
+            alt=""
+          />
+          <div class="TextContainer1">
+            <h1 class="fs-2">Orange Juice</h1>
+            <p>Cold and Refreshing!</p>
+            <p class="text-end">Price : 4.2$</p>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="rowContainer">
+          <div class="infoImage">
+            <img class="menuImage" src="../image/mango.jpg" alt="" />
+            <div class="TextContainer1">
+              <h1 class="fs-2">Mango Juice </h1>
+              <p>Creamy broth and full of richness</p>
+              <p class="text-end">Price : 6.2$</p>
+            </div>
+          </div>
+          <div class="infoImage">
+            <img
+              class="menuImage"
+              src="../image/purin.jpg"
+              alt=""
+            />
+            <div class="TextContainer1">
+              <h1 class="fs-2">Japanese Pudding</h1>
+              <p>Cold and Refreshing!</p>
+              <p class="text-end">Price : 4.2$</p>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+    </section>
+  </body>
+  <footer class="footer">
     <div class="footer-flex-container">
-      
-        <img
-          src="../image/japanese-ramen-logo-design-vector_707267-450-removebg-preview.png"
-          alt="" class="footerLogo"
-        />
-    
+      <img
+        src="../image/japanese-ramen-logo-design-vector_707267-450-removebg-preview.png"
+        alt=""
+        class="footerLogo"
+      />
+
       <div class="div-block1">
         <h2 class="footer-heading">Contact us</h2>
         <ul class="content1">

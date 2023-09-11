@@ -155,7 +155,7 @@ a {
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-family: "Proxima-Nova";
+  font-family: "Montserrat-Regular";
   font-size: 25px;
   line-height: 34px;
   display: flex;
@@ -170,7 +170,7 @@ a {
   /* justify-content: center; */
   /* align-items: center; */
   padding: 60px;
-  font-family: "Factoria-Medium";
+  font-family: "Montserrat-Regular";
 }
 .img1 {
   width: 640px;
@@ -272,7 +272,9 @@ a {
    
 
 }
-
+.homeNav {
+  color: #dc3545;
+}
 .promoText {
    font-size: 80px;
 }
@@ -363,10 +365,7 @@ color: white;
   background-size: cover;
   
 }
-.drinkClass,
-.brunchClass,
-.lunchClass,
-.dinnerClass {
+.dinnerHeading {
   color: #93bdb2;
 text-align: center;
 letter-spacing: 4px;
@@ -379,76 +378,12 @@ font-weight: 700;
 font-family: Regular,sans-serif;
 }
 
-/* // Select the div where the menu text will be displayed
-const menuText = document.querySelector('#menuText');
-
-// Select all the buttons in the menuContainer section
-const buttons = document.querySelectorAll('.menuContainer .menuButton');
-
-// Add a click event listener to each button
-buttons.forEach(function(button) {
-  button.addEventListener('click', function() {
-    // Reset the background color of all buttons
-    buttons.forEach(function(btn) {
-      btn.style.backgroundColor = '#02594d';
-    });
-
-    // Change the background color of the clicked button
-    button.style.backgroundColor = '#ff5338';
-
-    // Remove all menu-related classes from menuText
-    menuText.classList.remove('dinnerClass', 'lunchClass','brunchClass','drinkClass');
-
-    // Change the text in the menuText div based on the button clicked
-    if (button.textContent === 'DINNER') {
-      menuText.textContent = 'DINNER MENU';
-      menuText.classList.add('dinnerClass');
-    } else if (button.textContent === 'LUNCH') {
-      menuText.textContent = 'LUNCH MENU';
-      menuText.classList.add('lunchClass');
-    } else if (button.textContent === 'BRUNCH')
-    {
-      menuText.textContent = 'BRUNCH MENU';
-      menuText.classList.add('brunchClass');
-    } else if (button.textContent === 'DRINKS')
-    {
-      menuText.textContent = 'DRINK MENU';
-      menuText.classList.add('drinkClass');
-    }
-  });
-});
-HTML
- <section class="menu">
-        <h1 class="menuHero">MENUS</h1>
-      </section>
-
-      <section class="menuContainer">
-        
-        <button type="button" class="btn btn-primary btn-lg menuButton">DINNER</button>
-        <button type="button" class="btn btn-primary btn-lg menuButton">LUNCH</button>
-        <button type="button" class="btn btn-primary btn-lg menuButton">BRUNCH</button>
-        <button type="button" class="btn btn-primary btn-lg menuButton">DRINKS</button>
-        
-      </section>
-      
-      <div id="menuText"></div>
-.menuButton {
-  border-radius: 0;
-  width: 10%;
+.menuItem {
+  flex-direction: column;
+  margin-top: 40px;
+  font-family: "Proxima-Nova";
 }
-.menuButton:active {
-  background-color: #ff5338;
-}
-.menu {
-  background-image: url(image/ramen2.avif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-}
-.drinkClass,
-.brunchClass,
-.lunchClass,
-.dinnerClass {
+.menuTitle {
   color: #93bdb2;
 text-align: center;
 letter-spacing: 4px;
@@ -460,4 +395,30 @@ font-size: 56px;
 font-weight: 700;
 font-family: Regular,sans-serif;
 }
- */
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.infoImage {
+  display: flex;
+  flex-direction: row;
+ 
+  margin-top: 20px; /* Adjust this value as needed */
+}
+.menuImage {
+  object-fit: cover;
+  height: 120px;
+  width: 120px;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
+.fs-2 {
+  padding-left: 20px;
+  color: #02594d;
+  font-weight: 900;
+}
+.text-end {
+  font-size: 12px;
+}
