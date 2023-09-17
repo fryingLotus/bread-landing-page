@@ -92,3 +92,10 @@ input.value = '2023-09-11'; // Set the value
 input.addEventListener('input', () => {
   console.log(input.value); // Log the value when it changes
 });
+
+
+document.querySelector('.dropdown-btn').addEventListener('click', function() {
+  var displayStyle = document.querySelector('.dropdown-content').style.display === 'none' ? 'flex' : 'none';
+  document.querySelector('.dropdown-content').style.display = displayStyle;
+  document.querySelector('.dropdown-item').style.display = displayStyle;
+});

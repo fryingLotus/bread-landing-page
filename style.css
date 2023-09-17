@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+a.navbar-brand{
+  font-size: 3rem !important;
+}
 h2 {
     font-weight: 700;
 }
@@ -31,7 +34,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   /* padding: 10px; */
   z-index: 1;
   top: 0;
@@ -66,7 +69,8 @@ a:hover {
   gap: 60px;
   justify-content: space-evenly;
   align-items: center;
-  padding-right: 20px;
+  /* padding-right: 20px; */
+  padding-left: 0px;
   font-size: 30px;
   margin-top: 15px;
   color: #02594d;
@@ -83,7 +87,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: #9e6b17;
+  color: #02594d;
 }
 
 .FirstSection {
@@ -281,10 +285,11 @@ a {
 .promoButton {
   background-color: #02594d;
   border-radius: 6px;
-  width: 13%;
+  width: 100%;
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Proxima-Nova";
+  color: white;
 }
 /* // Footer */
 
@@ -422,3 +427,5 @@ font-family: Regular,sans-serif;
 .text-end {
   font-size: 12px;
 }
+
+
