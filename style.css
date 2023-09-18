@@ -77,7 +77,7 @@ a:hover {
 }
 .right-side {
   display: flex;
-  padding-right: 40px;
+  /* padding-right: 40px; */
 }
 .reserveBtn {
   background-color:#02594d;;
